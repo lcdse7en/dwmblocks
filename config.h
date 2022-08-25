@@ -2,13 +2,13 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 /*	{"",	"cpubars",	5,	17},*/
-	{"",	"music",	0,	11},
+	{"",	"music",	1,	11},
   {"",	"nettraf",	1,	16},
 	{"",	"memory",	10,	14},
 	{"",	"disk",		60,	5},
 	{"",	"cputemp",	10,	18},
-/*	{"",	"internet",	5,	4},*/
-	// {"",	"volume",	0,	10},
+  {"",	"cpubars",	5,	4},
+	{"",	"volume",	0,	10},
 /*	{"",	"brightness",	0,	11},*/
 /*	{"",	"battery",	60,	3},*/
 	{"",	"sb-weather",	18000,	20},
