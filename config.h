@@ -17,6 +17,7 @@ static const Block blocks[] = {
 	{"",	"sb-torrent",	20,	7},
 	{"",	"weather",	18000,	2},
 	{"",	"clock",	60,	1},
+	{"",	"ipaddress",	18000,	3},
   {"",	"internet",	5,	4},
 /*	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	{"",	"pacpackages",	0,	8},
