@@ -1,18 +1,23 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
+// sudo cp * /usr/local/bin
+//https://github.com/JayPhil2k19/dwmblocks/tree/master/statusbar
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 /*	{"",	"cpubars",	5,	17},*/
+  {"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	{"🕴 ",	"music",	1,	11},
 	{"",	"volume",	1,	10},
   {"",	"nettraf",	1,	16},
 	{"",	"memory",	10,	14},
 	{"",	"disk",		60,	5},
 	{"",	"cputemp",	10,	18},
-  {"",	"cpubars",	5,	4},
+  // {"",	"cpubars",	5,	4},
 /*	{"",	"brightness",	0,	11},*/
 /*	{"",	"battery",	60,	3},*/
-	{"",	"sb-weather",	18000,	20},
+	{"",	"sb-torrent",	20,	7},
+	{"",	"weather",	18000,	2},
 	{"",	"clock",	60,	1},
+  {"",	"internet",	5,	4},
 /*	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	{"",	"pacpackages",	0,	8},
 	{"",	"news",		0,	6},
