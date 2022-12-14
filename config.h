@@ -4,8 +4,8 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 /*	{"",	"cpubars",	5,	17},*/
-  {"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
-	{"🕴 ",	"music",	1,	11},
+	// {"",	"torrent",	1,	7},
+	{"🌹",	"music",	1,	11},
 	{"",	"volume",	1,	10},
   {"",	"nettraf",	1,	16},
 	{"",	"memory",	10,	14},
@@ -14,7 +14,6 @@ static const Block blocks[] = {
   // {"",	"cpubars",	5,	4},
 /*	{"",	"brightness",	0,	11},*/
 /*	{"",	"battery",	60,	3},*/
-	{"",	"sb-torrent",	20,	7},
 	{"",	"weather",	18000,	2},
 	{"",	"clock",	60,	1},
 	{"",	"ipaddress",	18000,	3},
