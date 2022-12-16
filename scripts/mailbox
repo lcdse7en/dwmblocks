@@ -1,7 +1,4 @@
-#!/bin/sh
-
-# Displays number of unread mail and an loading icon if updating.
-# When clicked, brings up `neomutt`.
+#!/usr/bin/env bash
 
 case $BLOCK_BUTTON in
 	1) setsid -f "$TERMINAL" -e neomutt ;;
@@ -13,18 +10,19 @@ case $BLOCK_BUTTON in
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
-# unread="$(find "${XDG_DATA_HOME:-$HOME/.local/share}"/mail/*/[Ii][Nn][Bb][Oo][Xx]/new/* -type f | wc -l 2>/dev/null)"
+# unread="$(find "${XDG_DATA_HOME:-$HOME/.local/share}"/mail/*/[Ii][Nn][Bb][Oo][Xx]/new/* -type f 2>/dev/null | wc -l 2>/dev/null)"
+# [ "$unread" != "0" ] && mpv --no-video --no-terminal ./email.recv.mp3 && notify-send "📬 温馨提示：您有($unread)封未读邮件"
+# echo "📬:$unread(Mail)"
 
-# pidof mbsync >/dev/null 2>&1 && icon="🔃"
 
-# [ "$unread" = "0" ] && [ "$icon" = "" ] || echo "📬$unread$icon"
 
 function email {
 	declare -i new=$(du -a ~/.local/share/mail/*/INBOX/new/* 2>/dev/null | sed -n '$=')
 	if [[ "$new" == 0 ]];then
-		printf " 📭 "
+    echo "📭:0(Mail)"
 	else
-		printf " $new 📬 "
+    echo "📬:$new(Mail)"
+    mpv --no-video --no-terminal ./email.recv.mp3 && notify-send "📬 温馨提示：您有($new)封未读邮件"
 	fi
 }
 

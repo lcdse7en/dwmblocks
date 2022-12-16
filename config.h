@@ -5,7 +5,7 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 /*	{"",	"cpubars",	5,	17},*/
 	// {"",	"torrent",	1,	7},
-	{"",	"mailbox",	1,	12},
+	{"",	"mailbox",	180,	12},
 	{"☕ ",	"music",	1,	11},
 	{"",	"volume",	1,	10},
   {"",	"nettraf",	1,	16},
