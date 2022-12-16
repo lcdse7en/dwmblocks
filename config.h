@@ -6,7 +6,7 @@ static const Block blocks[] = {
 /*	{"",	"cpubars",	5,	17},*/
 	// {"",	"torrent",	1,	7},
 	{"",	"mailbox",	1,	12},
-	{"🌹",	"music",	1,	11},
+	{"☕ ",	"music",	1,	11},
 	{"",	"volume",	1,	10},
   {"",	"nettraf",	1,	16},
 	{"",	"memory",	10,	14},
@@ -17,9 +17,9 @@ static const Block blocks[] = {
 /*	{"",	"battery",	60,	3},*/
 	{"",	"weather",	18000,	2},
 	{"",	"clock",	60,	1},
-	{"",	"ipaddress",	18000,	3},
-	{"🥀:",	"ipv4",	18000,	6},
-  {"",	"internet",	5,	4},
+	{"",	"ipaddress", 18000,	3},
+	{"🥀:",	"ipv4",5,	6},
+  {"",	"internet",	1,	4},
 /*	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	{"",	"pacpackages",	0,	8},
 	{"",	"news",		0,	6},
